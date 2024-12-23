@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/fullscreen_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/secondbackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+
+    <Button
+        android:id="@+id/historyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
+        android:text="Payment History"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="352dp"
+        android:layout_height="587dp"
+        app:cardBackgroundColor="#36FFFFFF"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fullscreen_image"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/fullscreen_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="117dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.07"
+                app:srcCompat="@drawable/profileicon" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="326dp"
+                android:layout_height="48dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:fontFamily="@font/merriweather"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="12dp"
+                android:textAlignment="textStart"
+                android:textSize="16dp"
+                android:enabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.538"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.319" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="326dp"
+                android:layout_height="48dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:fontFamily="@font/merriweather"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="12dp"
+                android:textAlignment="textStart"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.538"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.556" />
+
+            <EditText
+                android:id="@+id/subdistrict"
+                android:layout_width="326dp"
+                android:layout_height="48dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:fontFamily="@font/merriweather"
+                android:hint="Subdistrict"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="12dp"
+                android:textAlignment="textStart"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.538"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.677" />
+
+            <EditText
+                android:id="@+id/urban_village"
+                android:layout_width="326dp"
+                android:layout_height="48dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:fontFamily="@font/merriweather"
+                android:hint="Urban Village"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="12dp"
+                android:textAlignment="textStart"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.538"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.795" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="326dp"
+                android:layout_height="48dp"
+                android:background="@drawable/input_border"
+                android:ems="10"
+                android:fontFamily="@font/merriweather"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="12dp"
+                android:textAlignment="textStart"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.538"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.435"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:background="@drawable/button_border"
+                android:text="Update"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.931"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.97" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/profileButton"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/usericon" />
+
+    <ImageView
+        android:id="@+id/homeButton"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/homeicon" />
+
+    <ImageView
+        android:id="@+id/concertButton"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/festivalicon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
